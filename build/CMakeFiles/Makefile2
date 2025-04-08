@@ -62,11 +62,19 @@ CMAKE_BINARY_DIR = C:\Users\maygr\Documents\cpp-dynamic\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/Accessing.dir/all
+all: CMakeFiles/AddingRemoving.dir/all
 all: CMakeFiles/BasicExample.dir/all
+all: CMakeFiles/ObjectOperations.dir/all
+all: CMakeFiles/SortingOperations.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
+codegen: CMakeFiles/Accessing.dir/codegen
+codegen: CMakeFiles/AddingRemoving.dir/codegen
 codegen: CMakeFiles/BasicExample.dir/codegen
+codegen: CMakeFiles/ObjectOperations.dir/codegen
+codegen: CMakeFiles/SortingOperations.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -74,8 +82,76 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/Accessing.dir/clean
+clean: CMakeFiles/AddingRemoving.dir/clean
 clean: CMakeFiles/BasicExample.dir/clean
+clean: CMakeFiles/ObjectOperations.dir/clean
+clean: CMakeFiles/SortingOperations.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Accessing.dir
+
+# All Build rule for target.
+CMakeFiles/Accessing.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Accessing.dir\build.make CMakeFiles/Accessing.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Accessing.dir\build.make CMakeFiles/Accessing.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles --progress-num=1,2 "Built target Accessing"
+.PHONY : CMakeFiles/Accessing.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Accessing.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Accessing.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles 0
+.PHONY : CMakeFiles/Accessing.dir/rule
+
+# Convenience name for target.
+Accessing: CMakeFiles/Accessing.dir/rule
+.PHONY : Accessing
+
+# codegen rule for target.
+CMakeFiles/Accessing.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Accessing.dir\build.make CMakeFiles/Accessing.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles --progress-num=1,2 "Finished codegen for target Accessing"
+.PHONY : CMakeFiles/Accessing.dir/codegen
+
+# clean rule for target.
+CMakeFiles/Accessing.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Accessing.dir\build.make CMakeFiles/Accessing.dir/clean
+.PHONY : CMakeFiles/Accessing.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/AddingRemoving.dir
+
+# All Build rule for target.
+CMakeFiles/AddingRemoving.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AddingRemoving.dir\build.make CMakeFiles/AddingRemoving.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AddingRemoving.dir\build.make CMakeFiles/AddingRemoving.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles --progress-num=3,4 "Built target AddingRemoving"
+.PHONY : CMakeFiles/AddingRemoving.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/AddingRemoving.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/AddingRemoving.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles 0
+.PHONY : CMakeFiles/AddingRemoving.dir/rule
+
+# Convenience name for target.
+AddingRemoving: CMakeFiles/AddingRemoving.dir/rule
+.PHONY : AddingRemoving
+
+# codegen rule for target.
+CMakeFiles/AddingRemoving.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AddingRemoving.dir\build.make CMakeFiles/AddingRemoving.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles --progress-num=3,4 "Finished codegen for target AddingRemoving"
+.PHONY : CMakeFiles/AddingRemoving.dir/codegen
+
+# clean rule for target.
+CMakeFiles/AddingRemoving.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AddingRemoving.dir\build.make CMakeFiles/AddingRemoving.dir/clean
+.PHONY : CMakeFiles/AddingRemoving.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/BasicExample.dir
@@ -84,7 +160,7 @@ clean: CMakeFiles/BasicExample.dir/clean
 CMakeFiles/BasicExample.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BasicExample.dir\build.make CMakeFiles/BasicExample.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BasicExample.dir\build.make CMakeFiles/BasicExample.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles --progress-num=1,2 "Built target BasicExample"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles --progress-num=5,6 "Built target BasicExample"
 .PHONY : CMakeFiles/BasicExample.dir/all
 
 # Build rule for subdir invocation for target.
@@ -101,13 +177,77 @@ BasicExample: CMakeFiles/BasicExample.dir/rule
 # codegen rule for target.
 CMakeFiles/BasicExample.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BasicExample.dir\build.make CMakeFiles/BasicExample.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles --progress-num=1,2 "Finished codegen for target BasicExample"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles --progress-num=5,6 "Finished codegen for target BasicExample"
 .PHONY : CMakeFiles/BasicExample.dir/codegen
 
 # clean rule for target.
 CMakeFiles/BasicExample.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BasicExample.dir\build.make CMakeFiles/BasicExample.dir/clean
 .PHONY : CMakeFiles/BasicExample.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ObjectOperations.dir
+
+# All Build rule for target.
+CMakeFiles/ObjectOperations.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjectOperations.dir\build.make CMakeFiles/ObjectOperations.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjectOperations.dir\build.make CMakeFiles/ObjectOperations.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles --progress-num=7,8 "Built target ObjectOperations"
+.PHONY : CMakeFiles/ObjectOperations.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ObjectOperations.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ObjectOperations.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles 0
+.PHONY : CMakeFiles/ObjectOperations.dir/rule
+
+# Convenience name for target.
+ObjectOperations: CMakeFiles/ObjectOperations.dir/rule
+.PHONY : ObjectOperations
+
+# codegen rule for target.
+CMakeFiles/ObjectOperations.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjectOperations.dir\build.make CMakeFiles/ObjectOperations.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles --progress-num=7,8 "Finished codegen for target ObjectOperations"
+.PHONY : CMakeFiles/ObjectOperations.dir/codegen
+
+# clean rule for target.
+CMakeFiles/ObjectOperations.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjectOperations.dir\build.make CMakeFiles/ObjectOperations.dir/clean
+.PHONY : CMakeFiles/ObjectOperations.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/SortingOperations.dir
+
+# All Build rule for target.
+CMakeFiles/SortingOperations.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SortingOperations.dir\build.make CMakeFiles/SortingOperations.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SortingOperations.dir\build.make CMakeFiles/SortingOperations.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles --progress-num=9,10 "Built target SortingOperations"
+.PHONY : CMakeFiles/SortingOperations.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SortingOperations.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/SortingOperations.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles 0
+.PHONY : CMakeFiles/SortingOperations.dir/rule
+
+# Convenience name for target.
+SortingOperations: CMakeFiles/SortingOperations.dir/rule
+.PHONY : SortingOperations
+
+# codegen rule for target.
+CMakeFiles/SortingOperations.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SortingOperations.dir\build.make CMakeFiles/SortingOperations.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\maygr\Documents\cpp-dynamic\build\CMakeFiles --progress-num=9,10 "Finished codegen for target SortingOperations"
+.PHONY : CMakeFiles/SortingOperations.dir/codegen
+
+# clean rule for target.
+CMakeFiles/SortingOperations.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SortingOperations.dir\build.make CMakeFiles/SortingOperations.dir/clean
+.PHONY : CMakeFiles/SortingOperations.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

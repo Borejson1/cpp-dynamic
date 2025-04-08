@@ -1,3 +1,7 @@
+C:/Users/maygr/Documents/cpp-dynamic/build/CMakeFiles/Accessing.dir
+C:/Users/maygr/Documents/cpp-dynamic/build/CMakeFiles/AddingRemoving.dir
 C:/Users/maygr/Documents/cpp-dynamic/build/CMakeFiles/BasicExample.dir
+C:/Users/maygr/Documents/cpp-dynamic/build/CMakeFiles/ObjectOperations.dir
+C:/Users/maygr/Documents/cpp-dynamic/build/CMakeFiles/SortingOperations.dir
 C:/Users/maygr/Documents/cpp-dynamic/build/CMakeFiles/edit_cache.dir
 C:/Users/maygr/Documents/cpp-dynamic/build/CMakeFiles/rebuild_cache.dir

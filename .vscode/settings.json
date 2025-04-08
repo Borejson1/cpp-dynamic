@@ -56,6 +56,7 @@
     "xutility": "cpp",
     "algorithm": "cpp",
     "optional": "cpp",
-    "*.in": "cpp"
+    "*.in": "cpp",
+    "string": "cpp"
   }
 }

@@ -116,6 +116,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Accessing
+
+# Build rule for target.
+Accessing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Accessing
+.PHONY : Accessing
+
+# fast build rule for target.
+Accessing/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Accessing.dir\build.make CMakeFiles/Accessing.dir/build
+.PHONY : Accessing/fast
+
+#=============================================================================
+# Target rules for targets named AddingRemoving
+
+# Build rule for target.
+AddingRemoving: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AddingRemoving
+.PHONY : AddingRemoving
+
+# fast build rule for target.
+AddingRemoving/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AddingRemoving.dir\build.make CMakeFiles/AddingRemoving.dir/build
+.PHONY : AddingRemoving/fast
+
+#=============================================================================
 # Target rules for targets named BasicExample
 
 # Build rule for target.
@@ -127,6 +153,80 @@ BasicExample: cmake_check_build_system
 BasicExample/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BasicExample.dir\build.make CMakeFiles/BasicExample.dir/build
 .PHONY : BasicExample/fast
+
+#=============================================================================
+# Target rules for targets named ObjectOperations
+
+# Build rule for target.
+ObjectOperations: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ObjectOperations
+.PHONY : ObjectOperations
+
+# fast build rule for target.
+ObjectOperations/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjectOperations.dir\build.make CMakeFiles/ObjectOperations.dir/build
+.PHONY : ObjectOperations/fast
+
+#=============================================================================
+# Target rules for targets named SortingOperations
+
+# Build rule for target.
+SortingOperations: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SortingOperations
+.PHONY : SortingOperations
+
+# fast build rule for target.
+SortingOperations/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SortingOperations.dir\build.make CMakeFiles/SortingOperations.dir/build
+.PHONY : SortingOperations/fast
+
+examples/Accessing.obj: examples/Accessing.cpp.obj
+.PHONY : examples/Accessing.obj
+
+# target to build an object file
+examples/Accessing.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Accessing.dir\build.make CMakeFiles/Accessing.dir/examples/Accessing.cpp.obj
+.PHONY : examples/Accessing.cpp.obj
+
+examples/Accessing.i: examples/Accessing.cpp.i
+.PHONY : examples/Accessing.i
+
+# target to preprocess a source file
+examples/Accessing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Accessing.dir\build.make CMakeFiles/Accessing.dir/examples/Accessing.cpp.i
+.PHONY : examples/Accessing.cpp.i
+
+examples/Accessing.s: examples/Accessing.cpp.s
+.PHONY : examples/Accessing.s
+
+# target to generate assembly for a file
+examples/Accessing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Accessing.dir\build.make CMakeFiles/Accessing.dir/examples/Accessing.cpp.s
+.PHONY : examples/Accessing.cpp.s
+
+examples/AddingRemoving.obj: examples/AddingRemoving.cpp.obj
+.PHONY : examples/AddingRemoving.obj
+
+# target to build an object file
+examples/AddingRemoving.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AddingRemoving.dir\build.make CMakeFiles/AddingRemoving.dir/examples/AddingRemoving.cpp.obj
+.PHONY : examples/AddingRemoving.cpp.obj
+
+examples/AddingRemoving.i: examples/AddingRemoving.cpp.i
+.PHONY : examples/AddingRemoving.i
+
+# target to preprocess a source file
+examples/AddingRemoving.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AddingRemoving.dir\build.make CMakeFiles/AddingRemoving.dir/examples/AddingRemoving.cpp.i
+.PHONY : examples/AddingRemoving.cpp.i
+
+examples/AddingRemoving.s: examples/AddingRemoving.cpp.s
+.PHONY : examples/AddingRemoving.s
+
+# target to generate assembly for a file
+examples/AddingRemoving.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AddingRemoving.dir\build.make CMakeFiles/AddingRemoving.dir/examples/AddingRemoving.cpp.s
+.PHONY : examples/AddingRemoving.cpp.s
 
 examples/BasicExample.obj: examples/BasicExample.cpp.obj
 .PHONY : examples/BasicExample.obj
@@ -152,6 +252,54 @@ examples/BasicExample.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BasicExample.dir\build.make CMakeFiles/BasicExample.dir/examples/BasicExample.cpp.s
 .PHONY : examples/BasicExample.cpp.s
 
+examples/ObjectOperations.obj: examples/ObjectOperations.cpp.obj
+.PHONY : examples/ObjectOperations.obj
+
+# target to build an object file
+examples/ObjectOperations.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjectOperations.dir\build.make CMakeFiles/ObjectOperations.dir/examples/ObjectOperations.cpp.obj
+.PHONY : examples/ObjectOperations.cpp.obj
+
+examples/ObjectOperations.i: examples/ObjectOperations.cpp.i
+.PHONY : examples/ObjectOperations.i
+
+# target to preprocess a source file
+examples/ObjectOperations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjectOperations.dir\build.make CMakeFiles/ObjectOperations.dir/examples/ObjectOperations.cpp.i
+.PHONY : examples/ObjectOperations.cpp.i
+
+examples/ObjectOperations.s: examples/ObjectOperations.cpp.s
+.PHONY : examples/ObjectOperations.s
+
+# target to generate assembly for a file
+examples/ObjectOperations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjectOperations.dir\build.make CMakeFiles/ObjectOperations.dir/examples/ObjectOperations.cpp.s
+.PHONY : examples/ObjectOperations.cpp.s
+
+examples/SortingOperations.obj: examples/SortingOperations.cpp.obj
+.PHONY : examples/SortingOperations.obj
+
+# target to build an object file
+examples/SortingOperations.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SortingOperations.dir\build.make CMakeFiles/SortingOperations.dir/examples/SortingOperations.cpp.obj
+.PHONY : examples/SortingOperations.cpp.obj
+
+examples/SortingOperations.i: examples/SortingOperations.cpp.i
+.PHONY : examples/SortingOperations.i
+
+# target to preprocess a source file
+examples/SortingOperations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SortingOperations.dir\build.make CMakeFiles/SortingOperations.dir/examples/SortingOperations.cpp.i
+.PHONY : examples/SortingOperations.cpp.i
+
+examples/SortingOperations.s: examples/SortingOperations.cpp.s
+.PHONY : examples/SortingOperations.s
+
+# target to generate assembly for a file
+examples/SortingOperations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SortingOperations.dir\build.make CMakeFiles/SortingOperations.dir/examples/SortingOperations.cpp.s
+.PHONY : examples/SortingOperations.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -160,10 +308,26 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Accessing
+	@echo ... AddingRemoving
 	@echo ... BasicExample
+	@echo ... ObjectOperations
+	@echo ... SortingOperations
+	@echo ... examples/Accessing.obj
+	@echo ... examples/Accessing.i
+	@echo ... examples/Accessing.s
+	@echo ... examples/AddingRemoving.obj
+	@echo ... examples/AddingRemoving.i
+	@echo ... examples/AddingRemoving.s
 	@echo ... examples/BasicExample.obj
 	@echo ... examples/BasicExample.i
 	@echo ... examples/BasicExample.s
+	@echo ... examples/ObjectOperations.obj
+	@echo ... examples/ObjectOperations.i
+	@echo ... examples/ObjectOperations.s
+	@echo ... examples/SortingOperations.obj
+	@echo ... examples/SortingOperations.i
+	@echo ... examples/SortingOperations.s
 .PHONY : help
 
 

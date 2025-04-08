@@ -27,6 +27,8 @@ namespace CppDynamic
       array = updateArray;
     }
   protected:    
+    friend class Sort;
+
     T& operator[](int index)
     {
       return array[index];
