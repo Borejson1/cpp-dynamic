@@ -32,9 +32,49 @@ namespace CppDynamic
       }
     }
 
-    void basicQuickSort()
+    template<typename T>
+    static int medianOfThree(T& array, int left, int right)
     {
+      int mid = left+(right-left) / 2;
 
+      if(array[left] > array[mid]){
+        swap(array[left], array[mid]);
+      }
+      if(array[left] > array[right]){
+        swap(array[left], array[right]);
+      }
+      if(array[mid] > array[right]){
+        swap(array[mid], array[right]);
+      }
+      return mid;
+    }
+
+    template<typename T>
+    static int partition(T& array, int left, int right)
+    {
+      int pivotIndex = medianOfThree(array, left, right);
+      auto pivot = array[pivotIndex];
+      swap(array[pivotIndex], array[right]);
+      int i = left-1;
+
+      for(int j=left; j<right; j++){
+        if(array[j] < pivot){
+          i++; swap(array[i], array[j]);
+        }
+      }
+      swap(array[i+1], array[right]);
+      return i + 1;
+    }
+
+    template<typename T>
+    static void basicQuickSort(T& array, int left, int right)
+    {
+      if(left < right){
+        int pivotIndex = partition(array, left, right);
+        basicQuickSort(array, left, pivotIndex-1);
+        basicQuickSort(array, pivotIndex+1, right);
+      }
+      return;
     }
 
     template<typename T>
@@ -69,9 +109,10 @@ namespace CppDynamic
       basicSelectionSort(array, array.size()); 
     } 
 
-    static void quickSort()
+    template<typename T>
+    static void quickSort(T& array, int left, int right)
     {
-
+      basicQuickSort(array, left, right);
     }
 
     template<typename T>
@@ -92,7 +133,6 @@ namespace CppDynamic
       basicBubbleSort(array, array.size());
     }
   };
-  
 }
 
 #endif  

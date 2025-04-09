@@ -120,6 +120,7 @@ CMakeFiles/SortingOperations.dir/examples/SortingOperations.cpp.obj: C:/Users/ma
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
   C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
   C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
@@ -131,6 +132,7 @@ CMakeFiles/SortingOperations.dir/examples/SortingOperations.cpp.obj: C:/Users/ma
   C:/mingw64/x86_64-w64-mingw32/include/pthread.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
@@ -146,6 +148,7 @@ CMakeFiles/SortingOperations.dir/examples/SortingOperations.cpp.obj: C:/Users/ma
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
   C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
   C:/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/mingw64/x86_64-w64-mingw32/include/wctype.h
@@ -405,6 +408,8 @@ C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/_timeval.h:
+
 C:/mingw64/x86_64-w64-mingw32/include/ctype.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/errno.h:
@@ -420,6 +425,8 @@ C:/mingw64/x86_64-w64-mingw32/include/pthread.h:
 C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h:
 
@@ -440,6 +447,8 @@ C:/mingw64/x86_64-w64-mingw32/include/stdio.h:
 C:/mingw64/x86_64-w64-mingw32/include/stdlib.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
+
+C:/mingw64/x86_64-w64-mingw32/include/time.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/vadefs.h:
 
