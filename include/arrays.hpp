@@ -92,6 +92,12 @@ namespace CppDynamic
       return array[index];
     }
 
+    void set(int index, T value)
+    {
+      if(index >= arraySize || index < 0) return;
+      array[index] = value;
+    }
+
     void print()
     {
       for(int i=0; i<arraySize; i++){
